@@ -1,10 +1,11 @@
 {
   "name": "cache-test",
   "version": "1.0.0",
-  "description": "",
+  "description": "GitHub Actions cache demo",
   "main": "index.js",
   "scripts": {
-    "test": "echo 'ok'"
+    "test": "echo 'All good!'"
   },
-  "dependencies": {}
+  "dependencies": {},
+  "devDependencies": {}
 }
