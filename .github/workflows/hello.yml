@@ -1,0 +1,21 @@
+name: Hello World Action  # Name shown in Actions tab
+
+on:  # Triggers: run on push or pull request
+  push:
+    branches: [ main ]  # Or your default branch
+  pull_request:
+    branches: [ main ]
+
+jobs:  # One job called "test"
+  test:
+    runs-on: ubuntu-latest  # Free GitHub runner (virtual machine)
+    
+    steps:  # List of tasks
+      - name: Checkout code  # Step 1: Grab your repo files
+        uses: actions/checkout@v4  # Reusable action from GitHub
+        
+      - name: 23f2004903@ds.study.iitm.ac.in  # Your required step!
+        run: echo "Hello from my GitHub Action!"  # Simple command
+        
+      - name: List files  # Bonus step: Show what happened
+        run: ls -la
